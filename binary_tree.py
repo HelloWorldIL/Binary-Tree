@@ -3,7 +3,12 @@ from random import randint
 
 test = Tree()
 
-for x in range(20):
-    test.add_value(randint(0, 100))
+test.add_value(6)
+test.add_value(3)
+test.add_value(7)
+test.add_value(2)
+test.add_value(1)
+test.add_value(8)
 
-print(test.to_string())
+test.to_string()
+print(test.search_n(10))

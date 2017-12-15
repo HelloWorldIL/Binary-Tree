@@ -1,4 +1,5 @@
 from node import Node
+
 class Tree:
     root = None
 
@@ -11,5 +12,5 @@ class Tree:
     def to_string(self):
         self.root.traverse()
 
-    def search(n):
-        pass
+    def search_n(self, n):
+        return (self.root.search(n))

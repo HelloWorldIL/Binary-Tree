@@ -27,5 +27,20 @@ class Node:
 
         if self.right is not None:
             self.right.traverse()
-
-    def search(n)
+    
+    def search(self, n):
+        if self.value == n:
+            print("Match Found")
+            return True
+        elif n < self.value:
+            if self.left is not None:
+                self.left.search(n)
+            else:
+                print("No match was found")
+                return False
+        elif n > self.value:
+            if self.right is not None:
+                self.right.search(n)
+            else:
+                print("No match was found")
+                return False
